@@ -1,6 +1,7 @@
 'use strict';
 
 function renderDogImages(response) {
+  $('.results').empty();
   for (let i=0; i<response.message.length;i++ )
   $('.results').append(`<img src="${response.message[i]}" class="results-img">`);
 }
